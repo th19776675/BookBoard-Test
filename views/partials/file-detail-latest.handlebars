@@ -1,0 +1,37 @@
+<div class="content-box">
+  <div class="content-header flex">
+    <div class="header-title">
+      <h3>{{title}}</h3>
+      <p class="italic">${{price}}</p>
+    </div>
+    <div class="header-cover">
+      <img src="uploads/img/{{cover_art}}" alt="image" class="cover-thumb" />
+    </div>
+  </div>
+
+  <div class="content-body">
+    <div class="content-nav">
+      <p class="content-item"><a href="/profile/{{user_id}}" class="content-link">{{user.first_name}}
+          {{user.last_name}}
+        </a></p>
+    </div>
+    <div class="content-nav">
+      <p class="content-item">
+        <a href="/search?genre={{category.id}}" class="content-link">
+          {{category.category_name}}
+        </a>
+      </p>
+    </div>
+    <div class="content-nav">
+      <p class="content-item">
+        <a href="/search?category={{type.id}}" class="content-link">
+          {{type.type_name}}
+        </a>
+      </p>
+    </div>
+    <div class="content-nav">
+      <a href="/file/{{id}}" class="read-btn">Read</a>
+    </div>
+
+  </div>
+</div>
